@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./jpg/favicon.ico" type="">
+    <title>Startup Conference Planner</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="row m-0">
+                <div class="col-12">
+                    <h1>Startup Conference Planner</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="row m-0">
+                <div class="howtostart col-12">
+                    <h3>Найти инвестора теперь просто, как раз, два, три...</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="icons col-4">
+                    <img src="./jpg/date.svg" alt="" width="100px">
+                    <p class="info">Выбери доступную дату и место</p>
+                </div> 
+                <div class="icons col-4">
+                    <img src="./jpg/description.svg" alt="" width="100px">
+                    <p class="info">Обязательно напиши свое имя и<br> добавь описание своего Startup проекта</p>
+                </div> 
+                <div class="icons col-4">
+                    <img src="./jpg/book.svg" alt="" width="100px">
+                    <p class="info">Нажми кнопку ПРИМЕНИТЬ</p>
+                </div> 
+            </div>
+            <div class="row m-0">
+                <div class="rules col-12">
+                    <h4>Помни о простых правилах:</h4>
+                </div>
+                <div class="row m-0">
+                    <div class="list col-4"><p>Вовремя вноси изменения!</p></div>
+                    <div class="list col-4"><p>Бронировать можно только на предстоящую неделю</p></div>
+                    <div class="list col-4"><p>На презентацию тебе дается 1 час. Мы ценим и уважаем твое время и время наших инвесторов. </p></div>
+                </div>
+            </div>
+        <div class="form">
+            <div class="row m-0 p-0">
+                <div class="time col-2">
+                    <h3>Заполни<br> эту форму</h3>
+                    <h4>День</h4>
+                    <select name="" id="day">
+                        <option value="monday">Понедельник</option>
+                        <option value="tuesday">Вторник</option>
+                        <option value="wednesday">Среда</option>
+                        <option value="thursday">Четверг</option>
+                        <option value="friday">Пятница</option>
+                        <option value="saturday">Суббота</option>
+                    </select>
+                    <h4>Время</h4>
+                    <select name="time" id="time">
+                        <option value="time9">09:00</option>
+                        <option value="time10">10:00</option>
+                        <option value="time11">11:00</option>
+                        <option value="time12">12:00</option>
+                        <option value="time13">13:00</option>
+                        <option value="time14">14:00</option>
+                        <option value="time15">15:00</option>
+                        <option value="time16">16:00</option>
+                        <option value="time17">17:00</option>
+                        <option value="time18">18:00</option>
+                    </select>
+                    <h4>Место</h4>
+                    <select name="" id="room">
+                        <option value="room-1">Комната 1</option>
+                        <option value="room-2">Комната 2</option>
+                    </select>
+                    <h4>Действие</h4>
+                    <select name="" id="edit">
+                        <option value="add"> Добавить</option>
+                        <option value="edit">Изменить</option>
+                        <option value="remove">Удалить</option>
+                    </select>
+                    <h4>Цвет</h4>
+                    <select name="" id="color">
+                        <option class="" value="#a10115">Red</option>
+                        <option class="" value="#d72c16">Cherry</option>
+                        <option class="" value="#c0b2b5">Smoke</option>
+                        <option class="" value="#113743">Denim</option>
+                        <option class="" value="#20232a">Black</option>
+                        <option class="" value="#5d535e">Grey</option>
+                    </select>
+                    <div class="name">
+                        <input id="name" type="name" placeholder="Имя:" value="">
+                    </div>
+                    <div class="description">
+                        <textarea name="description" id="description" cols="51" rows="3" placeholder="Добавь описание Startup проекта"></textarea>
+                    </div>
+                    <div class="btn">
+                        <button>Применить</button>
+                    </div>
+                </div>
+                <div class="week col-10">
+                </div> <!--week -->
+            </div>    
+        </div>
+        </div>
+        <div class="footer">
+            <div class="row p-0 m-0">
+                <div class="col-12">
+                    <p class="copyright">&copy 2020 Startup Conference Planner, Designed by <a class="footerlink" href="https://github.com/tanyakorobkova888">Korobkova Tanya</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="my_modal" class="modal">
+            <div class="modal_content">
+                <h4>Про Startup:</h4>
+                <p id="about"></p>
+            </div>
+            <div class="close-modal">
+                <div class="close_modal_window">×</div>
+            </div>
+        </div>
+    </div> <!--container--> 
+    <script src="./js/script.js"></script>
+</body>
+</html> 
